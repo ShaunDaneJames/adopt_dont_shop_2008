@@ -1,0 +1,16 @@
+<h1>Create a new Shelter</h1>
+
+<form action="/shelters" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p>Enter a new Shelter</p>
+  <input type='text' name='name'/><br/>
+  <p>Enter the Street address</p>
+  <input type='text' name='address'/><br/>
+  <p>Enter the City</p>
+  <input type='text' name='city'/><br/>
+  <p>Enter the State</p>
+  <input type='text' name='state'/><br/>
+  <p>Enter the Zip</p>
+  <input type='text' name='zip'/><br/>
+  <input type='submit' value='Create Shelter'/>
+</form>
