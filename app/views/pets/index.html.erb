@@ -1,7 +1,7 @@
-<h1> Pets at #{determine how to link id from shelter table} </h1>
+<h1> All Pets </h1>
 
 <%= @pets.each do |pet| %>
-<h3> <%= pet.name %> </h3>
+<h3> <%= pet.name%> : <%= pet.id %></h3>
 <ul>
   <li><%= pet.image %></li>
   <li><%= pet.approximate_age %></li>
