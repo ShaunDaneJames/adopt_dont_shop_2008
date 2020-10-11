@@ -1,4 +1,4 @@
-<h1>Shelters/id</h1>
+<h1>Shelters</h1>
 
 <h3> <%= @shelter.name %> : <%= @shelter.id %></h3>
 <p>
@@ -7,3 +7,5 @@
   <%= @shelter.state %>
   <%= @shelter.zip %>
  </p>
+
+ <%= link_to 'Update Shelter', "/shelters/#{@shelter.id}/edit"%>
