@@ -1,0 +1,11 @@
+<h1> Pets at #{determine how to link id from shelter table} </h1>
+
+<%= @pets.each do |pet| %>
+<h3> <%= pet.name %> </h3>
+<ul>
+  <li><%= pet.image %></li>
+  <li><%= pet.approximate_age %></li>
+  <li><%= pet.sex %></li>
+  <li><%= pet.located_at_shelter %></li>
+</ul>
+<% end %>
